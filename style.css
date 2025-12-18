@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('bg2026.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.calendar-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  padding: 20px;
+  max-width: 90vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#monthYear {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  width: 14.28%;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+td {
+  cursor: default;
+}
+
+.empty-cell {
+  background-color: #fafafa;
+}
+
+.weekend {
+  background-color: #ffebee;
+  font-weight: bold;
+}
+
+.holiday {
+  background-color: #e8f5e9;
+  color: #c62828;
+  font-weight: bold;
+  text-decoration: underline;
+}
